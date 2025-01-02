@@ -1,4 +1,3 @@
-
 # EA Add-In: Auto Diagram Title Generator
 
 This is an Enterprise Architect (EA) add-in that dynamically manages and updates titles for diagrams. It includes features for auto-generating, modifying, and cleaning up title elements within EA diagrams.
@@ -22,7 +21,6 @@ This is an Enterprise Architect (EA) add-in that dynamically manages and updates
 - A "Text" type element is used to display the title and additional metadata, such as the last modification date.
 
 ## Installation
-![image](https://github.com/user-attachments/assets/12a30c16-1c05-4cbe-92ca-22adf64de145)
 
 ### Option 1: Build from Source and Register Manually
 
@@ -30,10 +28,13 @@ This is an Enterprise Architect (EA) add-in that dynamically manages and updates
    - Use a .NET development environment, such as Visual Studio, to compile the provided code into a DLL.
 
 2. **Register the DLL**:
-   - Open a command prompt as Administrator and register the DLL using `regasm`:
+   - Open a command prompt as Administrator and register the DLL using `run -> regedit`:
+   - In order to let EA know there is a new add-in to be loaded we need to add a key in the registry in the location: 
      ```bash
-     regasm /codebase YourDllName.dll
+     HKEY_CURRENT_USER\Software\Sparx Systems\EAAddins
      ```
+  - The registry editor will automatically create a default value for the new key. Doubleclick on the (Default) value on the right pane, and enter the value in the form of [Namespace].[ClassName]
+    
 
 3. **Configure EA**:
    - Open EA.
