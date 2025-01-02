@@ -22,6 +22,7 @@ This is an Enterprise Architect (EA) add-in that dynamically manages and updates
 - A "Text" type element is used to display the title and additional metadata, such as the last modification date.
 
 ## Installation
+![image](https://github.com/user-attachments/assets/12a30c16-1c05-4cbe-92ca-22adf64de145)
 
 ### Option 1: Build from Source and Register Manually
 
