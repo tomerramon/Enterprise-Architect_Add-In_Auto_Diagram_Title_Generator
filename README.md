@@ -29,12 +29,14 @@ This is an Enterprise Architect (EA) add-in that dynamically manages and updates
 
 2. **Register the DLL**:
    - Open a command prompt as Administrator and register the DLL using `run -> regedit`:
+     ![image](https://github.com/user-attachments/assets/d2f1e002-677d-44b6-98c8-9c361d9e8975)
+
    - In order to let EA know there is a new add-in to be loaded we need to add a key in the registry in the location: 
      ```bash
      HKEY_CURRENT_USER\Software\Sparx Systems\EAAddins
      ```
-  - The registry editor will automatically create a default value for the new key. Doubleclick on the (Default) value on the right pane, and enter the value in the form of [Namespace].[ClassName]
-    
+  - The registry editor will automatically create a default value for the new key. Doubleclick on the (Default) value on the right pane, and enter the value in the form of [Namespace].[ClassName], for example -> MyAddin.MyAddinClass
+    ![image](https://github.com/user-attachments/assets/d3f82b6f-2551-4d38-965d-8e4a9d627a66)
 
 3. **Configure EA**:
    - Open EA.
