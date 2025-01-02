@@ -1,1 +1,1 @@
-# Auto_Title_AddIn
+# Enterprise-Architect Add-In Auto Diagram Title Generator
